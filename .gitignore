@@ -1,0 +1,5 @@
+node_modules/
+.env
+# photo of a real person: not published
+assets/avatar-photo.jpg
+.DS_Store

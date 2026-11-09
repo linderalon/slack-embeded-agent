@@ -1,0 +1,17 @@
+{
+  "name": "kaltura-slack-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Slack agent that relays conversations to a Kaltura conversational agent, with an optional avatar panel via Slack Work Objects embeds.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@kaltura/intelligent-agents": "github:kaltura/intelligent-agents-sdk#v1.37.0",
+    "@slack/bolt": "^4.4.0"
+  }
+}
