@@ -1,0 +1,17 @@
+{
+  "name": "kaltura-genie-slack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype: host Kaltura's own Genie (conversational agent) UI inside Slack's Work Object side panel.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "link": "node --env-file-if-exists=.env scripts/link.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@kaltura/intelligent-agents": "github:kaltura/intelligent-agents-sdk#v1.37.0",
+    "@slack/bolt": "^4.4.0"
+  }
+}
